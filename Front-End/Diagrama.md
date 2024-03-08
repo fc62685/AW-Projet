@@ -1,7 +1,6 @@
 ## Autenticação
-
-
-## Produtos
+<img width="424" alt="Autenticacao" src="https://github.com/fc62685/AW-Projet/assets/162343874/9bda229e-76c6-42dc-bef1-172154e4e39e">
+<img width="424" alt="Autenticacao2" src="https://github.com/fc62685/AW-Projet/assets/162343874/616c4125-9be0-4a1e-baef-e712b2a010f3">
 
 
 ## Estatisticas
@@ -19,4 +18,5 @@
 ## Produtos
 <img width="424" alt="Produtos" src="https://github.com/fc62685/AW-Projet/assets/162343874/d78f45b2-569f-4bf0-8dcd-a8d7150bab04">
 <img width="424" alt="Produtos2" src="https://github.com/fc62685/AW-Projet/assets/162343874/67d6833e-7b74-4f01-927d-f9c4d5d7f12a">
+<img width="424" alt="Produtos3" src="https://github.com/fc62685/AW-Projet/assets/162343874/c5f55653-848d-42cb-9a59-674aca218467">
 
