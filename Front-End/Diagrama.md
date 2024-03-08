@@ -17,4 +17,6 @@
 <img width="424" alt="Feedback" src="https://github.com/fc62685/AW-Projet/assets/162343874/930269ce-5ed3-4d41-9953-7478f9441543">
 
 ## Produtos
+<img width="424" alt="Produtos" src="https://github.com/fc62685/AW-Projet/assets/162343874/d78f45b2-569f-4bf0-8dcd-a8d7150bab04">
+<img width="424" alt="Produtos2" src="https://github.com/fc62685/AW-Projet/assets/162343874/67d6833e-7b74-4f01-927d-f9c4d5d7f12a">
 
