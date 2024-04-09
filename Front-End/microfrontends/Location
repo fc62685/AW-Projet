@@ -1,0 +1,12 @@
+Location
+Responsibilities:
+Providing specific location details such as ensuring the visual and textual aspects of the location.
+
+Simplicity:
+Facilitating navigation and finding the best path to reach the desired location.
+
+Reusability:
+Possibility of dynamically adapting to user preferences based on geographic location.
+
+Team:
+Use of location data from a user's device to provide relevant information, content, or functionality based on their current or specified location.
