@@ -1,0 +1,228 @@
+—----------------------------------TASK 10—----------------------------------------
+{
+ "title": "QRMeat",
+ "type": "object",
+ "properties": {
+   "Authentication": {
+     "type": "object",
+     "title": "Authentication",
+     "properties": {
+       "username": {
+         "type": "string",
+         "description": "username",
+         "example": "Miguel"
+       },
+       "password": {
+         "type": "string",
+         "description": "password of user",
+         "example": "ABC123!"
+       },
+       "e-mail": {
+         "type": "string",
+         "description": "e-mail of user",
+         "example": "carolmiguel@gmail.com"
+       }
+     }
+   },
+   "User": {
+     "type": "object",
+     "title": "User",
+     "properties": {
+       "user_id": {
+         "type": "integer",
+         "format": "int64",
+         "description": "ID of user",
+         "example": 1
+       },
+       "name": {
+         "type": "string",
+         "description": "name of user",
+         "example": "Carolina"
+       },
+       "contact": {
+         "type": "integer",
+         "format": "int64",
+         "description": "contact of user",
+         "example": 925875702
+       },
+       "email": {
+         "type": "string",
+         "description": "email of user",
+         "example": "carolinamiguel@hotmail.com"
+       },
+       "age": {
+         "type": "integer",
+         "format": "int64",
+         "description": "age of user",
+         "example": 54
+       },
+       "geographic_area": {
+         "type": "string",
+         "description": "geographic location of user",
+         "example": "Portugal"
+       },
+       "interests_categories": {
+         "item_categories": [
+           {
+             "category_id": {
+               "type": "integer",
+               "format": "int64",
+               "description": "ID of category",
+               "example": 1
+             }
+           }
+         ]
+       },
+       "photo": {
+         "type": "string",
+         "description": "photo of user"
+       },
+       "recommendations": [
+         {
+           "recommendation_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of recommendation",
+             "example": 1
+           },
+       ],
+       "feedback": [
+         {
+           "feedback_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of feedback",
+             "example": 1
+           },
+           "Feedback": {
+             "type": "string",
+             "description": "feedback",
+             "example": "Very good meat, 5 stars"
+           },
+           "user_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of reviewer",
+             "example": "56"
+           }
+         }
+       ],
+           }
+         }
+       ]
+     }
+   },
+   "Product": {
+     "type": "object",
+     "title": "Product",
+     "properties": {
+       "item_id": {
+         "type": "integer",
+         "format": "int64",
+         "description": "ID of item",
+         "example": 1
+       },
+       "item_name": {
+         "type": "string",
+         "description": "name of item",
+         "example": "Pork Meat"
+       },
+       "item_description": {
+         "type": "string",
+         "description": "description of item",
+         "example": "500g"
+       },
+       "item_photo": {
+         "type": "string",
+         "description": "photo of item"
+       },
+       "item_quality": {
+         "type": "number",
+         "format": "float",
+         "minimum": 0,
+         "maximum": 10,
+         "description": "quality of item",
+         "example": 10.0
+       },
+       "item_currency": {
+         "type": "string",
+         "enum": [
+           "euro(€)"
+         ],
+         "description": "item price currency"
+       },
+       "item_categories": [
+         {
+           "category_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of category",
+             "example": 1
+           }
+         }
+       ]
+     }
+   },"Support": [
+         {
+           "ticket_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of notification",
+             "example": 1
+           },
+           "ticket_content": {
+             "type": "string",
+             "description": "content of ticket",
+             "example": "Help!"
+           },
+           "priority": {
+             "type": "string",
+             "description": "Priority of the ticket",
+             "example": "High"
+           },
+           "user_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of user",
+             "example": 1
+           },"News": [
+         {
+           "News_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of News",
+             "example": 1
+           },
+           "News": {
+             "type": "string",
+             "description": "News",
+             "example": "Vacas em cartão no Marquês para chamar a atenção para a crise no leite"
+           },
+         }
+       ],"Stores": [
+         {
+           "Stores_id": {
+             "type": "integer",
+             "format": "int64",
+             "description": "ID of Store",
+             "example": 1
+           },
+           "Store": {
+             "type": "string",
+             "description": "Store",
+             "example": "Continente, Avenida das Nações Unidas"
+           },
+           "geograpic_area": {
+             "type": "string",
+             "description": "geographic location of store",
+             "example": "Avenida das Nações Unidas"
+           }
+         }
+       ],
+           }
+         }
+       ]
+     }
+   }
+ }
+}
