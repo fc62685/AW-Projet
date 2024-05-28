@@ -8,7 +8,7 @@
      "title": "Authentication",
      "properties": {
        "username": {
-         "type": "string",
+         type": "string",
          "description": "username",
          "example": "Miguel"
        },
@@ -17,16 +17,16 @@
          "description": "password of user",
          "example": "ABC123!"
        },
-       "e-mail": {
+       "e_mail": {
          "type": "string",
-         "description": "e-mail of user",
+         "description": "email of user",
          "example": "carolmiguel@gmail.com"
        }
      }
    },
    "User": {
      "type": "object",
-     "title": "User",
+     "title": "User"
      "properties": {
        "user_id": {
          "type": "integer",
@@ -43,7 +43,7 @@
          "type": "integer",
          "format": "int64",
          "description": "contact of user",
-         "example": 925875702
+         "example": 9256727271
        },
        "email": {
          "type": "string",
@@ -69,20 +69,20 @@
                "format": "int64",
                "description": "ID of category",
                "example": 1
-             }
+             
            }
          ]
        },
        "photo": {
-         "type": "string",
+         "type": "png",
          "description": "photo of user"
        },
-       "recommendations": [
+       "recomendations": [
          {
-           "recommendation_id": {
+           "recomendation_id": {
              "type": "integer",
              "format": "int64",
-             "description": "ID of recommendation",
+             "description": "ID of recomendation",
              "example": 1
            },
        ],
@@ -102,7 +102,7 @@
            "user_id": {
              "type": "integer",
              "format": "int64",
-             "description": "ID of reviewer",
+             "description": "ID of user",
              "example": "56"
            }
          }
@@ -110,7 +110,7 @@
            }
          }
        ]
-     }
+     
    },
    "Product": {
      "type": "object",
@@ -120,7 +120,7 @@
          "type": "integer",
          "format": "int64",
          "description": "ID of item",
-         "example": 1
+         "example": 8
        },
        "item_name": {
          "type": "string",
@@ -129,7 +129,7 @@
        },
        "item_description": {
          "type": "string",
-         "description": "description of item",
+         "descrption": "description of item",
          "example": "500g"
        },
        "item_photo": {
@@ -146,12 +146,10 @@
        },
        "item_currency": {
          "type": "string",
-         "enum": [
-           "euro(€)"
-         ],
+        
          "description": "item price currency"
        },
-       "item_categories": [
+       "ite_categories": [
          {
            "category_id": {
              "type": "integer",
@@ -159,7 +157,7 @@
              "description": "ID of category",
              "example": 1
            }
-         }
+      
        ]
      }
    },"Support": [
@@ -167,13 +165,9 @@
            "ticket_id": {
              "type": "integer",
              "format": "int64",
-             "description": "ID of notification",
+             "description": "IDn",
              "example": 1
-           },
-           "ticket_content": {
-             "type": "string",
-             "description": "content of ticket",
-             "example": "Help!"
+    
            },
            "priority": {
              "type": "string",
@@ -204,23 +198,23 @@
            "Stores_id": {
              "type": "integer",
              "format": "int64",
-             "description": "ID of Store",
+             "description": "ID ,
              "example": 1
            },
            "Store": {
-             "type": "string",
+             "type: "string",
              "description": "Store",
              "example": "Continente, Avenida das Nações Unidas"
-           },
+           }
            "geograpic_area": {
              "type": "string",
-             "description": "geographic location of store",
+             "description": "location of store",
              "example": "Avenida das Nações Unidas"
            }
          }
-       ],
+       ,
            }
-         }
+         
        ]
      }
    }
