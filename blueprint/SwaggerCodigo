@@ -1,0 +1,950 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "User Details API",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://virtserver.swaggerhub.com/MIGUELDOMINGUES/SwaggerAWProject/1.0.0",
+      "description": "SwaggerHub API Auto Mocking"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Autenticao"
+    },
+    {
+      "name": "UserDetails"
+    },
+    {
+      "name": "InformacaoProduto"
+    },
+    {
+      "name": "Feedback"
+    },
+    {
+      "name": "Lojas"
+    },
+    {
+      "name": "Mapas"
+    },
+    {
+      "name": "Noticias"
+    }
+  ],
+  "paths": {
+    "/users/{user_ide}": {
+      "get": {
+        "tags": [
+          "Autenticao"
+        ],
+        "summary": "Get the user by ID",
+        "parameters": [
+          {
+            "name": "user_ide",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Autenticao"
+        ],
+        "summary": "Update the user by ID",
+        "parameters": [
+          {
+            "name": "user_ide",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Autenticao"
+        ],
+        "summary": "Delete the user by ID",
+        "parameters": [
+          {
+            "name": "user_ide",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/": {
+      "get": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Get lista de users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Update users",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/{user_id}": {
+      "get": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Get the user by ID",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Update the user by ID",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/user_id/detaisl/{user_id}": {
+      "get": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Get user details by userID",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Update user details by userID",
+        "parameters": [
+          {
+            "name": "user_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/{acc_id}": {
+      "delete": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Delete the user by account ID",
+        "parameters": [
+          {
+            "name": "acc_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/passWords/{acc_id}": {
+      "delete": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Delete passwords by accountID",
+        "parameters": [
+          {
+            "name": "acc_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/userDetails/{acc_id}": {
+      "delete": {
+        "tags": [
+          "UserDetails"
+        ],
+        "summary": "Delete the user details by account ID",
+        "parameters": [
+          {
+            "name": "acc_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Get lista de products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Update the products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Delete the products",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/categorias/{categoria_id}": {
+      "get": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Get the products by category ID",
+        "parameters": [
+          {
+            "name": "categoria_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Update the products by category ID",
+        "parameters": [
+          {
+            "name": "categoria_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Delete the products by category ID",
+        "parameters": [
+          {
+            "name": "categoria_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/categorias/{categoria_id}/{product_id}": {
+      "get": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Get the product by categoryID and productID",
+        "parameters": [
+          {
+            "name": "categoria_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Delete the product by categoryID and productID",
+        "parameters": [
+          {
+            "name": "categoria_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/categorias/{product_id}": {
+      "get": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Get product by product ID",
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/categorias/": {
+      "put": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Update categories",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "InformacaoProduto"
+        ],
+        "summary": "Delete categories",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedback/{prod_id}/like": {
+      "get": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Get the likes for a product",
+        "parameters": [
+          {
+            "name": "prod_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedback/{prod_id}/dislike": {
+      "get": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Get the dislikes for a product",
+        "parameters": [
+          {
+            "name": "prod_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedback/{prod_id}/like/{like_id}": {
+      "delete": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Delete a like for a product",
+        "parameters": [
+          {
+            "name": "prod_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "like_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedback/{prod_id}/dislike/{dislike_id}": {
+      "delete": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Delete a dislike for a product",
+        "parameters": [
+          {
+            "name": "prod_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "dislike_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/feedback/{prod_id}": {
+      "delete": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Delete all feedback of the a product",
+        "parameters": [
+          {
+            "name": "prod_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/{product_id}/feedback/like": {
+      "put": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Update the feedback with like for a product",
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/products/{product_id}/feedback/dislike": {
+      "put": {
+        "tags": [
+          "Feedback"
+        ],
+        "summary": "Update the feedback with dislike for a product",
+        "parameters": [
+          {
+            "name": "product_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/stores": {
+      "get": {
+        "tags": [
+          "Lojas"
+        ],
+        "summary": "Get lista de stores",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Lojas"
+        ],
+        "summary": "Update the stores",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Lojas"
+        ],
+        "summary": "Delete stores",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/stores/{stores_id}": {
+      "get": {
+        "tags": [
+          "Lojas"
+        ],
+        "summary": "Get store by ID",
+        "parameters": [
+          {
+            "name": "stores_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Lojas"
+        ],
+        "summary": "Delete the store by ID",
+        "parameters": [
+          {
+            "name": "stores_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mapas": {
+      "get": {
+        "tags": [
+          "Mapas"
+        ],
+        "summary": "Get lista de mapas",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/mapas/{stores_id}": {
+      "get": {
+        "tags": [
+          "Mapas"
+        ],
+        "summary": "Get mapa by store ID",
+        "parameters": [
+          {
+            "name": "stores_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/noticias": {
+      "get": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Get lista de noticias",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Update noticias",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Delete noticias",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/noticias/{noticias_id}": {
+      "get": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Get noticias by ID",
+        "parameters": [
+          {
+            "name": "noticias_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Update noticias by ID",
+        "parameters": [
+          {
+            "name": "noticias_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Noticias"
+        ],
+        "summary": "Delete noticias by ID",
+        "parameters": [
+          {
+            "name": "noticias_id",
+            "in": "path",
+            "required": true,
+            "style": "simple",
+            "explode": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {}
+}
